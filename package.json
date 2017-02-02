@@ -1,6 +1,6 @@
 {
   "name": "scalejs.hot-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A loader for scalejs modules to make them hot reloadable.",
   "main": "hot-loader.js",
   "scripts": {
