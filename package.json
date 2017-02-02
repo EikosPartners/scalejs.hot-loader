@@ -1,0 +1,19 @@
+{
+  "name": "scalejs.hot-loader",
+  "version": "1.0.0",
+  "description": "A loader for scalejs modules to make them hot reloadable.",
+  "main": "hot-loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EikosPartners/scalejs.hot-loader.git"
+  },
+  "author": "Eikos Partners",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EikosPartners/scalejs.hot-loader/issues"
+  },
+  "homepage": "https://github.com/EikosPartners/scalejs.hot-loader#readme"
+}
