@@ -17,7 +17,7 @@ module: {
             test: [
                 /Module\.js$/
             ],
-            loader: "hot-loader"
+            loader: "scalejs.hot-loader"
         }
     ]
 }
