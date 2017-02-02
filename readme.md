@@ -5,21 +5,29 @@ The loader will add code for a notification to be sent via the [scalejs messageb
 
 You must also have the hotRender file in your project's src folder along with an alias for it in your webpack config.
 
-## Steps
+## How To Use
 
-1. `npm i --save-dev scalejs.hot-loader`
-2. Update your webpack config by adding a preloader to your module property
-    ```
-      {
-      	test: [
-      		/Module\.js$/
-      	],
-      	loader: "hot-loader"
-      }
-    ```
-3. In a file where you want to react to a hot reload place the following code:
-    ```
-    receive('hot-render', () => {
-        // Custom handler here.
-    });
-    ```
+`npm i --save-dev scalejs.hot-loader`
+
+Update your webpack config by adding a preloader to your module property
+```
+module: {
+    preLoaders: [
+        {
+            test: [
+                /Module\.js$/
+            ],
+            loader: "hot-loader"
+        }
+    ]
+}
+```
+
+In a file where you want to react to a hot reload, import receive and set up the handler.
+```
+import { receive } from scalejs.messagebus;
+
+receive('hot-render', () => {
+    // Custom handler here.
+});
+```
